@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>향기 케어 제조 브랜드 웰씨코리아</title>
+    <link rel="icon"type="image/png" href="파비콘.png"/>
+    <link rel="stylesheet"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        /* 꾸미기 */
+        .logo {
+        width: 200px;
+        height: auto;
+        margin: 10px;
+        }
+        .donation-section {
+         margin-bottom: 50px;
+        }
+        .card {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+        .button {
+        margin-top: 150px;
+        }
+        .btn-primary {
+        display: block; /* 인라인 요소를 블록 요소로 변경 */
+        margin: 0 auto; /* 좌우 마진을 자동으로 설정하여 가운데 정렬 */
+        text-align: center; /* 버튼 안의 텍스트를 가운데 정렬 */
+        width: 200px; /* 버튼의 너비 설정 */
+}
+        .company-info img {
+        display: inline-block;
+        vertical-align: middle;
+  /* 이미지를 가운데 정렬하기 위한 vertical-align 설정 */
+}
+
+        .company-info .info {
+        display: inline-block;
+        margin-left: 20px; /* 정보와 로고 간격 설정 */
+        vertical-align: middle;
+}
+        .company-info {
+        text-align: center;
+    }
+
+        .menu_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+        .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: #f1f1f1;
+}
+        .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        width: 100%;
+}
+        .footer-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+        .footer-links .btn {
+        margin: 0 10px;
+        cursor: pointer;
+}
+        .footer-info {
+        text-align: center;
+        margin-top: 25px;
+}
+        .footer {
+        font-size: small;
+}
+        .graph-container {
+		  	width: 80%;
+			  margin: auto;
+		  	padding-top: 20px;
+		}
+    #market-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#market-info {
+  margin: 0;
+  padding: 0;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="hero bg-dark text-center py-5" style="margin-bottom: 2rem;">
+      <img src="로고.png" alt="로고" width="200px" height="auto">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="https://open.kakao.com/o/saoB22Lc" class="btn btn-primary mb-3">오프라인 강의 예약</a>
+              </div>
+              <div class="col-md-4">
+                <a href="https://www.youtube.com/embed/dQw4w9WgXcQ" class="btn btn-secondary mb-3">강의 VOD 시청</a>
+                <a href="https://payapplite.com/l/LkFuDF" class="btn btn-danger mb-3">구매 하기</a>
+              </div>
+              <div class="col-md-4">
+                <a href="https://cafe.naver.com/wellthykorea" class="btn btn-dark btn-outline-light mb-3">멤버쉽 가입</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <section class="container my-5">
+                <h2 class="text-center mb-5">아로마테라피란?</h2>
+                <article class="card mb-3">
+                  <img src="https://images.unsplash.com/photo-1543272702-8baba022d0e9" alt="Aromatherapy" class="card-img-top">
+                  <div class="card-body">
+                    <div style="text-align: center;">
+                    <h3 class="card-title">아로마테라피, 당신의 감성을 건강하게 만드는 방법</h3>
+                    <div style="text-align: center;">
+                    <p class="card-text">‘아로마테라피’라는 단어를 들어본 적 있나요? 가볍고 상쾌한 향을 맡으며 자연적인 치료를 받을 수 있는 방법이랍니다.<br>
+                    아로마테라피는 ‘향기치료’ 라고도 불리며, 이를 통해 정신적, 육체적, 심리적으로 건강해질 수 있다는 것이 주장되고 있습니다.</p>
+                    <a href="https://www.hankyung.com/life/article/2021072017767" class="btn btn-primary" target="_blank">논문 자료 보러가기</a>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3>* 아로마테라피 설명</h3>
+                        <video width="100%" height="auto" controls>
+                          <source src="https://www.youtube.com/embed/dQw4w9WgXcQ" type="video/mp4">
+                        </video>
+                      </div>
+                      <div class="col-md-6">
+                        <h3>아로마테라피의 효능</h3>
+                        <p>아로마테라피(Aromatherpy)는 Aroma(향)와 Therapy(치료)의 합성어로 식물에서 추출한 <br>방향성 정유인 에센셜 오일(Essential Oil)을 이용하여 건강의 유지와 증진을 도모하는 방법으로 몸과 마음의 힐링을 위해 사용되고 있습니다.<br>
+                        <br>아로마테라피에 주로 사용되는 에센셜 오일은 효능이 있는 식물(허브)의 꽃, 잎, 줄기, 열매, 뿌리 등을 스팀 증류법이나 압축, 용제추출법에 의해 고농축으로 추출해낸 것으로, 종류별로 효과가 다릅니다.
+                        에센셜오일은 가볍고 휘발성이 크므로 호흡기 및 피부를 통해 몸 속에 쉽게 흡수될 수 있으며, 흡입법, 마사지법, 목욕법 등을 통하여 흡수된 향은<br>스트레스를 해소하거나 심신의 균형을 유지하는 데 도움을 줍니다.<br>  
+                          [출처]:https://www.hidoc.co.kr/healthstory/news/C0000101067 |</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3>* 메디칼테라피 설명</h3>
+                        <video width="100%" height="auto" controls>
+                          <source src="https://www.youtube.com/embed/dQw4w9WgXcQ" type="video/mp4">
+                        </video>
+                      </div>
+                      <div class="col-md-6">
+                        <h3>기존의 아로마테라피와 차이</h3>
+                        <p>아로마테라피(Aromatherpy)는 Aroma(향)와 Therapy(치료)의 합성어로 식물에서 추출한 <br>방향성 정유인 에센셜 오일(Essential Oil)을 이용하여 건강의 유지와 증진을 도모하는 방법으로 몸과 마음의 힐링을 위해 사용되고 있습니다.
+                            아로마테라피에 주로 사용되는 에센셜 오일은 <br>효능이 있는 식물(허브)의 꽃, 잎, 줄기, 열매, 뿌리 등을 스팀 증류법이나 압축, 용제추출법에 의해 고농축으로 추출해낸 것으로, 종류별로 효과가 다릅니다.
+                            에센셜오일은 가볍고 휘발성이 크므로 호흡기 및 피부를 통해 몸 속에 쉽게 흡수될 수 있으며 흡입법, 마사지법, 목욕법 등을 통하여 흡수된 향은 스트레스를 해소하거나 심신의 균형을 유지하는 데 도움을 줍니다.<br>  
+                            [출처] : https://www.hidoc.co.kr/healthstory/news/C0000101067 |</p>
+                      </div>
+                      <div class="col-md-6">
+                        <h3>* 적용 분야 </h3>
+                        <video width="100%" height="auto" controls>
+                          <source src="https://www.youtube.com/embed/dQw4w9WgXcQ" type="video/mp4">
+                        </video>
+                      </div>
+                      <div class="col-md-6">
+                        <h3>반려견 교육 훈련에 적용</h3>
+                        <p>아로마테라피(Aromatherpy)는 Aroma(향)와 Therapy(치료)의 합성어로 식물에서 추출한 <br>방향성 정유인 에센셜 오일(Essential Oil)을 이용하여 건강의 유지와 증진을 도모하는 방법으로 몸과 마음의 힐링을 위해 사용되고 있습니다.
+                            아로마테라피에 주로 사용되는 에센셜 오일은 <br>효능이 있는 식물(허브)의 꽃, 잎, 줄기, 열매, 뿌리 등을 스팀 증류법이나 압축, 용제추출법에 의해 고농축으로 추출해낸 것으로, 종류별로 효과가 다릅니다.
+                            에센셜오일은 가볍고 휘발성이 크므로 호흡기 및 피부를 통해 몸 속에 쉽게 흡수될 수 있으며 흡입법, 마사지법, 목욕법 등을 통하여 흡수된 향은 스트레스를 해소하거나 심신의 균형을 유지하는 데 도움을 줍니다.<br>  
+                            [출처] : https://www.hidoc.co.kr/healthstory/news/C0000101067 |</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <section id="market-info">
+                  <h2>웰씨코리아의 타겟 시장</h2>
+                  <div style="text-align: center;">
+                    <p>본 그래프는 웰씨코리아가 타겟하려는 대한민국의 반려견 에듀 훈련 산업의 매출 추이 자료입니다.</p>
+                    <p>위 자료를 참고 앞으로 시장 성장 예측과 함께 향후 전략 수립을 할 수 있습니다.</p>
+                  </div>
+                </section>
+                  <article>
+	                <div class="graph-container">
+		            	<!-- 그래프 코드 삽입 -->
+	            		<canvas id="myChart"></canvas>
+		            </div>
+                  </article>
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	              <script>
+	          	// 그래프 설정
+		var ctx = document.getElementById('myChart').getContext('2d');
+		var chart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ['2018', '2019', '2020', '2021'],
+				datasets: [{
+					label: '매출',
+					data: [5000, 6000, 8000, 9000],
+					backgroundColor: 'rgba(255, 99, 132, 0.2)',
+					borderColor: 'rgba(255, 99, 132, 1)',
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+	</script>
+        </article>
+    </section>
+    <!-- 기부 섹션 시작 -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2>웰씨코리아의 오일 펀딩 공모</h2>
+            <hr class="my-4">
+            <p class="mb-5">우리는 오일 펀딩으로 더 많은 일을 할 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <form action="process_donation.php" method="POST">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <label for="name">이름</label>
+                  <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="email">이메일</label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <label for="amount">기부금액 (₩)</label>
+                  <input type="number" id="amount" name="amount" class="form-control" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group">
+                  <label for="message">기부 메시지</label>
+                  <textarea id="message" name="message" class="form-control"></textarea>
+                </div>
+              <br>
+              </div>
+              <div class="form-row">
+                <div class="col-md-12 form-group text-center">
+                  <a href="https://donation-link.com"><button type="submit" class="btn btn-primary">후원하기</button></a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- 기부 섹션 끝 -->
+<br>
+      <section id="market-info">
+                <div style="text-align: center;">
+              <section>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2>* 온라인 조향 강의 보조 KIT 제공 서비스</h2>
+                      <hr>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mb-4">
+                      <div class="card">
+                        <img src="https://source.unsplash.com/1600x900/?aromatherapy,oil" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">1강 : 아로마테라피 에센셜 오일</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                          <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
+                          <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="card">
+                        <img src="https://source.unsplash.com/1600x900/?aromatherapy,aroma" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">2강 : 아로마테라피 아로마틱 오일</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
+                          <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
+                          <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="card">
+                        <img src="https://source.unsplash.com/1600x900/?aromatherapy,therapy" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">3강 : 아로마테라피 에센셜 오일</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                          <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT을 공급해드립니다.</p>
+                          <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                      <div class="card">
+                        <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">4강 : 아로마테라피 에센셜 오일</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                          <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
+                          <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-4">
+                        <div class="card">
+                          <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">5강 : 아로마테라피 에센셜 오일</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                            <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
+                            <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                              <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">6강 : 아로마테라피 에센셜 오일</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                                <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
+                                <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                                </div>
+                              </div>
+                            </div>
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <h2>* 쇼룸 전용 오일 판매 서비스</h2>
+                                      <hr>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                  <div class="col-md-4 mb-4">
+                                <div class="card">
+                                  <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                      <h5 class="card-title">아로마테라피 테라퓨틱 오일</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">7만원</h6>
+                                      <p class="card-text">심신을 안정시켜주는 테라퓨틱 오일입니다.</p>
+                                      <a href="https://blog.naver.com/wellthykoreablog" target="_blank" class="card-link">자세히 보기</a>
+                                    </div>
+                                  </div>
+                                </div>   
+                                <div class="col-md-4 mb-4">
+                                  <div class="card">
+                                    <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">아로마테라피 테라퓨틱 오일</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">7만원</h6>
+                                        <p class="card-text">심신을 안정시켜주는 테라퓨틱 오일입니다.</p>
+                                        <a href="https://blog.naver.com/wellthykoreablog" target="_blank" class="card-link">자세히 보기</a>
+                                      </div>
+                                    </div>
+                                  </div>   
+                                  <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                      <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                          <h5 class="card-title">아로마테라피 테라퓨틱 오일</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">7만원</h6>
+                                          <p class="card-text">심신을 안정시켜주는 테라퓨틱 오일입니다.</p>
+                                          <a href="https://blog.naver.com/wellthykoreablog" target="_blank" class="card-link">자세히 보기</a>
+                                        </div>
+                                      </div>
+                                    </div>  
+                                    <div class="col-md-4 mb-4">
+                                      <div class="card">
+                                        <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">아로마테라피 테라퓨틱 오일</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">7만원</h6>
+                                            <p class="card-text">심신을 안정시켜주는 테라퓨틱 오일입니다.</p>
+                                            <a href="https://blog.naver.com/wellthykoreablog" target="_blank" class="card-link">자세히 보기</a>
+                                          </div>
+                                        </div>
+                                      </div>   
+                                      <div class="col-md-4 mb-4">
+                                        <div class="card">
+                                          <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
+                                          <div class="card-body">
+                                              <h5 class="card-title">아로마테라피 테라퓨틱 오일</h5>
+                                              <h6 class="card-subtitle mb-2 text-muted">7만원</h6>
+                                              <p class="card-text">심신을 안정시켜주는 테라퓨틱 오일입니다.</p>
+                                              <a href="https://blog.naver.com/wellthykoreablog" target="_blank" class="card-link">자세히 보기</a>
+                                            </div>
+                                          </div>
+                                        </div> 
+                                        <div class="col-md-4 mb-4">
+                                          <div class="card">
+                                            <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">아로마테라피 테라퓨틱 오일</h5>
+                                                <h6 class="card-subtitle mb-2 text-muted">7만원</h6>
+                                                <p class="card-text">심신을 안정시켜주는 테라퓨틱 오일입니다.</p>
+                                                <a href="https://blog.naver.com/wellthykoreablog" target="_blank" class="card-link">자세히 보기</a>
+                                              </div>
+                                            </div>
+                                          </div>  
+                                          <div class="container">
+                                            <div class="row">
+                                              <div class="col-12">
+                                                <h2>* 반려견 심리 완화 발향 케어 디바이스 공급(렌탈 서비스)</h2>
+                                                <hr>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-md-4 mb-4">
+                                                <div class="card">
+                                                  <img src="https://source.unsplash.com/1600x900/?aromatherapy,oil" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">준비중입니다.</h5>
+                                                    <h6 class="card-subtitle mb-2 text-muted">준비중입니다.</h6>
+                                                    <p class="card-text">준비중입니다.</p>
+                                                    <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-4 mb-4">
+                                                <div class="card">
+                                                  <img src="https://source.unsplash.com/1600x900/?aromatherapy,aroma" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">준비중입니다.</h5>
+                                                    <h6 class="card-subtitle mb-2 text-muted">준비중입니다.</h6>
+                                                    <p class="card-text">준비중입니다.</p>
+                                                    <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-4 mb-4">
+                                                <div class="card">
+                                                  <img src="https://source.unsplash.com/1600x900/?aromatherapy,aroma" class="card-img-top" alt="...">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">준비중입니다.</h5>
+                                                    <h6 class="card-subtitle mb-2 text-muted">준비중입니다.</h6>
+                                                    <p class="card-text">준비중입니다.</p>
+                                                    <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                      <section>
+                        <div class="company-info">
+                            <img src="welcokr_logo.png" alt="전국수의사협회">
+                            <div class="info">
+                            </div>
+                            <img src="welcokr_logo.png" alt="국제반려동물교육협회">
+                            <div class="info">
+                            </div>
+                            <img src="welcokr_logo.png" alt="움틀">
+                            <div class="info">
+                            </div>
+                            <img src="welcokr_logo.png" alt="한국공학대학교">
+                            <div class="info">
+                            </div>
+                            <img src="welcokr_logo.png" alt="푸르개">
+                            <div class="info">
+                            </div>
+                                <div class="footer">
+                                      <div class="footer-info">
+                                        <div class="copyright">COPYRIGHT ⓒ 웰씨코리아 INC. ALL RIGHTS RESERVED.
+                                        </div>
+                                        <p class="description">
+                                          [우: 21082] 웰씨코리아, 인천광역시 계양구 계산로 171 <br>
+                                          개인정보관리책임자 : 정하민&nbsp;&nbsp;|&nbsp;&nbsp;대표전화 TEL : 010-3004-5183&nbsp;&nbsp;|&nbsp;&nbsp;FAX : 0504-023-5183&nbsp;&nbsp;|&nbsp;&nbsp;email: wellthykorea@gmail.com&nbsp;&nbsp;
+                                          | 계좌번호 : 302-1139-6773-01(농협: 예금주: 정하민)&nbsp;&nbsp;|
+                                      </div>
+                                  </div>
+                                </p>
+                            </div>
+                        </div>								
+                    </div>
+                    
+                          </div>
+</body>
+
+</html>
