@@ -19,6 +19,7 @@
         height: auto;
         margin: 10px;
         }
+        
         .donation-section {
          margin-bottom: 50px;
         }
@@ -105,7 +106,75 @@
   margin: 0;
   padding: 0;
 }
+   /* 사이드바 */
+   .sidebar {
+        position: fixed;
+        top: 0;
+        right: -250px; /* 기본 위치 (오른쪽 바깥쪽) */
+        width: 250px;
+        height: 100%;
+        background-color: #f5f5f5;
+        padding: 20px;
+        transition: all 0.5s ease-in-out;
+      }
 
+      /* 버튼 */
+      .toggle-btn {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      /* 버튼 아이콘 */
+      .toggle-btn span {
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: all 0.5s ease-in-out;
+      }
+
+      /* 버튼 활성화 시 아이콘 스타일 변경 */
+      .toggle-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .toggle-btn.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .toggle-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -8px);
+      }
+
+      /* 미디어 쿼리: 768px 이하의 화면에서는 사이드바를 화면 안으로 이동시킴 */
+      @media only screen and (max-width: 768px) {
+        .sidebar {
+          right: 0; /* 오른쪽으로 이동 */
+        }
+
+        .main {
+          margin-right: 250px; /* 사이드바의 너비 만큼 메인 컨텐츠를 왼쪽으로 밀어줌 */
+        }
+
+        .toggle-btn {
+          display: block; /* 버튼을 화면에 표시함 */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 사이드바 toggle 버튼 -->
+    <div class="toggle-btn" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+   
     </style>
 </head>
 
@@ -129,6 +198,7 @@
     <hr>
     <div class="container">
         <div class="row">
+
             <section class="container my-5">
                 <h2 class="text-center mb-5">아로마테라피란?</h2>
                 <article class="card mb-3">
@@ -153,7 +223,8 @@
                         <h3>아로마테라피의 효능</h3>
                         <p>아로마테라피(Aromatherpy)는 Aroma(향)와 Therapy(치료)의 합성어로 식물에서 추출한 <br>방향성 정유인 에센셜 오일(Essential Oil)을 이용하여 건강의 유지와 증진을 도모하는 방법으로 몸과 마음의 힐링을 위해 사용되고 있습니다.<br>
                         <br>아로마테라피에 주로 사용되는 에센셜 오일은 효능이 있는 식물(허브)의 꽃, 잎, 줄기, 열매, 뿌리 등을 스팀 증류법이나 압축, 용제추출법에 의해 고농축으로 추출해낸 것으로, 종류별로 효과가 다릅니다.
-                        에센셜오일은 가볍고 휘발성이 크므로 호흡기 및 피부를 통해 몸 속에 쉽게 흡수될 수 있으며, 흡입법, 마사지법, 목욕법 등을 통하여 흡수된 향은<br>스트레스를 해소하거나 심신의 균형을 유지하는 데 도움을 줍니다.<br>  
+                        에센셜오일은 가볍고 휘발성이 크므로 호흡기 및 피부를 통해 몸 속에 쉽게 흡수될 수 있으며, 흡입법, 마사지법, 목욕법 등을 통하여 흡수된 향은<br>스트레스를 해소하거나 심신의 균형을 유지하는 데 도움을 줍니다.<br>
+                        <br>  
                           [출처]:https://www.hidoc.co.kr/healthstory/news/C0000101067 |</p>
                       </div>
                       
@@ -169,10 +240,10 @@
                       </div>
                       <div class="col-md-6">
                         <h3>기존의 아로마테라피와 차이</h3>
-                        <p>아로마테라피(Aromatherpy)는 Aroma(향)와 Therapy(치료)의 합성어로 식물에서 추출한 <br>방향성 정유인 에센셜 오일(Essential Oil)을 이용하여 건강의 유지와 증진을 도모하는 방법으로 몸과 마음의 힐링을 위해 사용되고 있습니다.
-                            아로마테라피에 주로 사용되는 에센셜 오일은 <br>효능이 있는 식물(허브)의 꽃, 잎, 줄기, 열매, 뿌리 등을 스팀 증류법이나 압축, 용제추출법에 의해 고농축으로 추출해낸 것으로, 종류별로 효과가 다릅니다.
-                            에센셜오일은 가볍고 휘발성이 크므로 호흡기 및 피부를 통해 몸 속에 쉽게 흡수될 수 있으며 흡입법, 마사지법, 목욕법 등을 통하여 흡수된 향은 스트레스를 해소하거나 심신의 균형을 유지하는 데 도움을 줍니다.<br>  
-                            [출처] : https://www.hidoc.co.kr/healthstory/news/C0000101067 |</p>
+                        <p>아로마테라피(Aromatherpy)는 Aroma(향)와 Therapy(치료)의 합성어로 식물에서 추출한 <br>방향성 정유인 에센셜 오일(Essential Oil)을 이용하여 건강의 유지와 증진을 도모하는 방법으로 몸과 마음의 힐링을 위해 사용되고 있습니다.<br>
+                          <br>아로마테라피에 주로 사용되는 에센셜 오일은 효능이 있는 식물(허브)의 꽃, 잎, 줄기, 열매, 뿌리 등을 스팀 증류법이나 압축, 용제추출법에 의해 고농축으로 추출해낸 것으로, 종류별로 효과가 다릅니다.
+                          에센셜오일은 가볍고 휘발성이 크므로 호흡기 및 피부를 통해 몸 속에 쉽게 흡수될 수 있으며, 흡입법, 마사지법, 목욕법 등을 통하여 흡수된 향은<br>스트레스를 해소하거나 심신의 균형을 유지하는 데 도움을 줍니다.<br>  
+                            [출처]:https://www.hidoc.co.kr/healthstory/news/C0000101067 |</p>
                       </div>
                       <div class="col-md-6">
                         <h3>* 적용 분야 </h3>
@@ -182,10 +253,10 @@
                       </div>
                       <div class="col-md-6">
                         <h3>반려견 교육 훈련에 적용</h3>
-                        <p>아로마테라피(Aromatherpy)는 Aroma(향)와 Therapy(치료)의 합성어로 식물에서 추출한 <br>방향성 정유인 에센셜 오일(Essential Oil)을 이용하여 건강의 유지와 증진을 도모하는 방법으로 몸과 마음의 힐링을 위해 사용되고 있습니다.
-                            아로마테라피에 주로 사용되는 에센셜 오일은 <br>효능이 있는 식물(허브)의 꽃, 잎, 줄기, 열매, 뿌리 등을 스팀 증류법이나 압축, 용제추출법에 의해 고농축으로 추출해낸 것으로, 종류별로 효과가 다릅니다.
-                            에센셜오일은 가볍고 휘발성이 크므로 호흡기 및 피부를 통해 몸 속에 쉽게 흡수될 수 있으며 흡입법, 마사지법, 목욕법 등을 통하여 흡수된 향은 스트레스를 해소하거나 심신의 균형을 유지하는 데 도움을 줍니다.<br>  
-                            [출처] : https://www.hidoc.co.kr/healthstory/news/C0000101067 |</p>
+                        <p>아로마테라피(Aromatherpy)는 Aroma(향)와 Therapy(치료)의 합성어로 식물에서 추출한 <br>방향성 정유인 에센셜 오일(Essential Oil)을 이용하여 건강의 유지와 증진을 도모하는 방법으로 몸과 마음의 힐링을 위해 사용되고 있습니다.<br>
+                          <br>아로마테라피에 주로 사용되는 에센셜 오일은 효능이 있는 식물(허브)의 꽃, 잎, 줄기, 열매, 뿌리 등을 스팀 증류법이나 압축, 용제추출법에 의해 고농축으로 추출해낸 것으로, 종류별로 효과가 다릅니다.
+                          에센셜오일은 가볍고 휘발성이 크므로 호흡기 및 피부를 통해 몸 속에 쉽게 흡수될 수 있으며, 흡입법, 마사지법, 목욕법 등을 통하여 흡수된 향은<br>스트레스를 해소하거나 심신의 균형을 유지하는 데 도움을 줍니다.<br>  
+                            [출처]:https://www.hidoc.co.kr/healthstory/news/C0000101067 |</p>
                       </div>
                     </div>
                   </div>
@@ -193,8 +264,8 @@
                 <section id="market-info">
                   <h2>타겟 시장</h2>
                   <div style="text-align: center;">
-                    <p>본 그래프는 국내의 반려견 에듀 훈련 산업의 매출 추이 자료입니다.</p>
-                    <p>위 자료를 참고, 앞으로 웰씨코리아의 성장 예측과 함께 향후 전략 수립을 할 수 있습니다.</p>
+                    <p>본 그래프는 국내의 반려견 에듀 훈련 산업의 매출 추이 자료입니다.<br>
+                     위 자료를 참고, 앞으로 웰씨코리아의 성장 예측과 함께 향후 전략 수립을 할 수 있습니다.</p>
                   </div>
                 </section>
                   <article>
@@ -246,11 +317,14 @@
     <!-- 기부 섹션 시작 -->
     <section class="py-5">
       <div class="container">
-        <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2>웰씨코리아의 오일 펀딩 공모</h2>
-            <hr class="my-4">
-            <p class="mb-5">우리는 오일 펀딩으로 더 많은 일을 할 수 있습니다.</p>
+            <h2>반려견 심리 완화 발향 디바이스(일명 : FREAD)<br>
+             초기 제작 엔젤 투자자를 모집합니다.</h2>
+            <p class="mb-5">대한민국 반려견 에듀 훈련 산업 성장에 이바지를 할 수 있습니다!<br>
+            특히 IOT 스마트 디바이스에 메디칼테라피를 융합하여 접목시킨 국내 1호 기업이 될 수 있습니다!<br>
+            또한 수익의 30%를 반려견 에듀 훈련 산업에 더욱 쓰일 수 있도록 기부하겠습니다.<br>
+            웰씨코리아 브랜드의 든든한 지지자가 되어주세요!<br>
+            또한 수익의 30%를 반려견 에듀 훈련 산업에 더욱 쓰일 수 있도록 기부하겠습니다.</p>
           </div>
         </div>
         <div class="row">
@@ -268,7 +342,7 @@
               </div>
               <div class="form-row">
                 <div class="col-md-12 form-group">
-                  <label for="amount">기부금액 (₩)</label>
+                  <label for="amount">투자금액(₩)(1,000원부터 가능)</label>
                   <input type="number" id="amount" name="amount" class="form-control" required>
                 </div>
               </div>
@@ -281,7 +355,7 @@
               </div>
               <div class="form-row">
                 <div class="col-md-12 form-group text-center">
-                  <button type="submit" class="btn btn-primary" formaction="https://payapplite.com/l/LkFuDF">후원하기</button>
+                  <button type="submit" class="btn btn-primary" formaction="https://payapplite.com/l/LkFuDF">투자하기</button>
                 </div>
               </div>
             </form>
@@ -297,7 +371,7 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-12">
-                      <h2>* 온라인 조향 강의 보조 KIT 제공 서비스</h2>
+                      <h2>* 온라인 조향 강의 & 보조 KIT 제공 서비스</h2>
                       <hr>
                     </div>
                   </div>
@@ -307,9 +381,9 @@
                         <img src="https://source.unsplash.com/1600x900/?aromatherapy,oil" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">강의 1강 : 아로마테라피 에센셜 오일</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                          <h6 class="card-subtitle mb-2 text-muted">본 강의는 아로마테라피 에센셜 오일을<br>만들어볼 수 있는 강의입니다.</h6>
                           <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
-                          <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                          <a href="https://payapplite.com/l/7FT33J" target="_blank" class="card-link">결제하기</a>
                         </div>
                       </div>
                     </div>
@@ -318,9 +392,9 @@
                         <img src="https://source.unsplash.com/1600x900/?aromatherapy,aroma" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">강의 2강 : 아로마테라피 아로마틱 오일</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
+                          <h6 class="card-subtitle mb-2 text-muted">본 강의는 아로마테라피 에센셜 오일을<br>만들어볼 수 있는 강의입니다.</h6>
                           <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
-                          <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                          <a href="https://payapplite.com/l/7FT33J" target="_blank" class="card-link">결제하기</a>
                         </div>
                       </div>
                     </div>
@@ -329,9 +403,9 @@
                         <img src="https://source.unsplash.com/1600x900/?aromatherapy,therapy" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">강의 3강 : 아로마테라피 에센셜 오일</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
-                          <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT을 공급해드립니다.</p>
-                          <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                          <h6 class="card-subtitle mb-2 text-muted">본 강의는 아로마테라피 에센셜 오일을<br>만들어볼 수 있는 강의입니다.</h6>
+                          <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
+                          <a href="https://payapplite.com/l/7FT33J" target="_blank" class="card-link">결제하기</a>
                         </div>
                       </div>
                     </div>
@@ -340,9 +414,9 @@
                         <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">강의 4강 : 아로마테라피 에센셜 오일</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                          <h6 class="card-subtitle mb-2 text-muted">본 강의는 아로마테라피 에센셜 오일을<br>만들어볼 수 있는 강의입니다.</h6>
                           <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
-                          <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                          <a href="https://payapplite.com/l/7FT33J" target="_blank" class="card-link">결제하기</a>
                           </div>
                         </div>
                       </div>
@@ -351,9 +425,9 @@
                           <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">강의 5강 : 아로마테라피 에센셜 오일</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">본 강의는 아로마테라피 에센셜 오일을<br>만들어볼 수 있는 강의입니다.</h6>
                             <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
-                            <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
+                            <a href="https://payapplite.com/l/7FT33J" target="_blank" class="card-link">결제하기</a>
                             </div>
                           </div>
                         </div>
@@ -362,10 +436,9 @@
                               <img src="https://source.unsplash.com/1600x900/?aromatherapy,lavender" class="card-img-top" alt="...">
                               <div class="card-body">
                                 <h5 class="card-title">강의 6강 : 아로마테라피 에센셜 오일</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                                <h6 class="card-subtitle mb-2 text-muted">본 강의는 아로마테라피 에센셜 오일을<br>만들어볼 수 있는 강의입니다.</h6>
                                 <p class="card-text">본 강의 교육을 돕기 위한 보조 도구로<br>조향 KIT를 공급해드립니다.</p>
-                                <a href="https://open.kakao.com/o/saoB22Lc" target="_blank" class="card-link">배송지 입력</a>
-                                </div>
+                                <a href="https://payapplite.com/l/7FT33J" target="_blank" class="card-link">결제하기</a> n                                  </div>
                               </div>
                             </div>
                                 <div class="container">
